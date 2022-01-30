@@ -3,5 +3,18 @@ from usuarios.models import Usuario
 
 class UsuarioSerializer(ModelSerializer):
     class Meta:
-        fields='__all__'
+        fields=[
+            'bairro',
+            'cep',
+            'contato',
+            'email',
+            'first_name',
+            'last_name',
+            'nome',
+            'password',
+            'rg',
+            'rua',
+            'username',
+            'zona',
+        ]
         model=Usuario

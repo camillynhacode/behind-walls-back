@@ -51,6 +51,7 @@ class Usuario(AbstractBaseUser,PermissionsMixin):
         verbose_name= "Rua",
         max_length= 60
     )
+    
     first_name = models.CharField(verbose_name=('first name'), max_length=30)
     last_name = models.CharField(verbose_name=('last name'), max_length=30)
 

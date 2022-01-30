@@ -3,6 +3,13 @@ from django.utils import timezone
 
 class UserManager(BaseUserManager):
     def _create_user(self, username, email, password, is_staff, is_superuser, **extra_fields):
+        print(password)
+        print(password)
+        print(password)
+        print(password)
+        print(password)
+        print(password)
+        print(password)
         now = timezone.now()
         if not username:
             raise ValueError('The given username must be set')
